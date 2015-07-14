@@ -25,7 +25,7 @@
         define(["jquery"], factory);
     } else if (typeof exports === 'object') {
         factory(require('jquery'));
-    } else {
+    } else {new Date(year, month + 1)
         factory(jQuery);
     }
 }(function($, undefined){
