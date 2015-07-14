@@ -735,6 +735,10 @@
 			else
 				top += height;
 
+      // prevent picker disappear if top is negative
+       if (top < 0)
+           top = 0;
+                
 			if (this.o.rtl) {
 				var right = windowWidth - (left + width);
 				this.picker.css({
